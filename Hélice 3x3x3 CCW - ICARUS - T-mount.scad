@@ -19,28 +19,28 @@ use <elliptical_propblade.scad>
 */
 
 
-// Hélice de 3x3.5
+// Hélice de 3x2
 
 
-propeller (3, 76.5, 8.35, 50.8, hublen  = 5, profilepoints = 30, fairing = 2.5, dir = 1, te_thickness = 3.5);
+propeller (3, 76.5, 8.35, 50.8, hublen  = 3.5, profilepoints = 30, fairing = 2.5, dir = 1, te_thickness = 3.5);
 
 
 
 
 difference () {
-    cylinder(h = 6, r = 4.25, $fn = 100);
+    cylinder(h = 4, r = 4.25, $fn = 100);
      
     
     translate([0, 2.5, -0.5])
-        cylinder(h = 7, r = 1, $fn = 50);
+        cylinder(h = 7, r = 1.25, $fn = 50);
     ;
     
     translate([0, -2.5, -0.5])
-        cylinder(h = 7, r = 1, $fn = 50);
+        cylinder(h = 7, r = 1.25, $fn = 50);
     ;
     
     translate([0, 0, -0.5])  
-        cylinder(h = 7, r = 0.75, $fn = 50);
+        cylinder(h = 7, r = 1, $fn = 50);
 };
 
 
